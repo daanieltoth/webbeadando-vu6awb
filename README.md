@@ -1,4 +1,5 @@
-# zerogaming
+#zerogaming
 An assigment from the class Web Development!
-![image](https://github.com/user-attachments/assets/473acd8a-1c1f-434a-9aa1-3724a8497635)
-![image](https://github.com/user-attachments/assets/efa870bb-39ff-45ae-9193-b11343657a6d)
+![image](https://github.com/user-attachments/assets/5ed82aa2-1e98-42a3-b984-9ab06cd9351a)
+
+![image](https://github.com/user-attachments/assets/a554552e-4ed8-4bab-bc79-684aac2f7e74)
