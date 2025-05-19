@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games - Zero Crypto Gaming</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/games.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="script/script.js"></script>
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border: 5px solid white;
+      border-radius: 10px;
+    }
+    .lightbox.show {
+      display: flex;
+    }
+    .game-image img {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .game-image img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      document.querySelectorAll(".game-image img").forEach(img => {
+        img.addEventListener("click", () => {
+          lightbox.classList.add("show");
+          lightboxImg.src = img.src;
+        });
+      });
+      lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("show");
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
+        <li><a href="download.html">Download</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="games-intro animate__animated animate__fadeIn">
+      <div class="container">
+        <h1 class="section-title">Explore Our Games</h1>
+        <p>Experience high-stakes gaming where skill meets cryptocurrency rewards. Choose your challenge and compete for massive payouts.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="games-grid">
+        <article class="game-card animate__animated animate__fadeInUp">
+          <div class="game-image">
+            <img src="images/glasspads.jpg" alt="Glass Pads game screenshot">
+          </div>
+          <div class="game-content">
+            <h3>Glass Pads</h3>
+            <ul>
+              <li>A mind-bending puzzle where you must navigate transparent platforms to reach the goal.</li>
+              <li>The further you go the bigger the prize is</li>
+              <li>Win up to 5000x your original bet</li>
+            </ul>
+            <a href="#" class="button small">Play Now</a>
+          </div>
+        </article>
+
+        <article class="game-card animate__animated animate__fadeInUp animate__delay-1s">
+          <div class="game-image">
+            <img src="images/escaperoom.jpg" alt="Escape Room game screenshot">
+          </div>
+          <div class="game-content">
+            <h3>Escape Room</h3>
+            <ul>
+              <li>How long can you hide from the hunter?</li>
+              <li>Play together to lower the risk</li>
+              <li>Win up to 5000x your original bet</li>
+            </ul>
+            <a href="#" class="button small">Play Now</a>
+          </div>
+        </article>
+
+
+        <article class="game-card animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="game-image">
+            <img src="images/cryptoracer.jpg" alt="Crypto Racer game screenshot">
+          </div>
+          <div class="game-content">
+            <h3>Crypto Racer</h3>
+            <ul>
+              <li>Race through blockchain circuits at lightning speed.</li>
+              <li>Upgrade your NFT car to gain edge</li>
+              <li>Win up to 3000x your original bet</li>
+            </ul>
+            <a href="#" class="button small">Play Now</a>
+          </div>
+        </article>
+
+        <article class="game-card animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="game-image">
+            <img src="images/towerflip.jpg" alt="Tower Flip game screenshot">
+          </div>
+          <div class="game-content">
+            <h3>Tower Flip</h3>
+            <ul>
+              <li>Flip tiles in a strategic tower puzzle to advance.</li>
+              <li>Each level brings bigger crypto wins</li>
+              <li>Win up to 4000x your original bet</li>
+            </ul>
+            <a href="#" class="button small">Play Now</a>
+          </div>
+        </article>
+        <article class="game-card animate__animated animate__fadeInUp animate__delay-4s">
+          <div class="game-image">
+            <img src="images/shadowarena.jpg" alt="Shadow Arena game screenshot">
+          </div>
+          <div class="game-content">
+            <h3>Shadow Arena</h3>
+            <ul>
+              <li>Battle players in a dark, crypto-fueled arena.</li>
+              <li>Only one survives – will it be you?</li>
+              <li>Win up to 8000x your original bet</li>
+            </ul>
+            <a href="#" class="button small">Play Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="payout-table animate__animated animate__fadeIn">
+      <div class="container">
+        <details>
+          <summary>Payout Structure</summary>
+          <table>
+            <caption>Game Payout Multipliers</caption>
+            <thead>
+              <tr>
+                <th>Game</th>
+                <th>Level 1</th>
+                <th>Level 2</th>
+                <th>Level 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Glass Pads</td><td>10x</td><td>100x</td><td>5000x</td></tr>
+              <tr><td>Escape Room</td><td>5x</td><td>50x</td><td>5000x</td></tr>
+              <tr><td>Crypto Racer</td><td>8x</td><td>80x</td><td>3000x</td></tr>
+              <tr><td>Tower Flip</td><td>6x</td><td>60x</td><td>4000x</td></tr>
+              <tr><td>Shadow Arena</td><td>15x</td><td>150x</td><td>8000x</td></tr>
+            </tbody>
+          </table>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Zero Gaming. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="Zoomed image">
+  </div>
+</body>
+</html>

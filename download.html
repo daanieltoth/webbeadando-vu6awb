@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Zero - Crypto Gaming Platform</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/download.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="script/script.js"></script>
+</head>
+<body>
+  <header>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introduction</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="download.html" class="active">Download</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="download-header animate__animated animate__fadeIn">
+      <div class="container">
+        <h1 class="section-title">Download Zero</h1>
+        <p>Get started with the ultimate crypto gaming experience. Choose your platform and join the high-stakes action today.</p>
+      </div>
+    </section>
+
+    <section class="platforms">
+      <div class="container">
+        <div class="platform-grid">
+          <article class="platform-card animate__animated animate__fadeInLeft">
+            <div class="platform-icon">
+              <i class="fab fa-windows fa-3x"></i>
+            </div>
+            <h2>Windows</h2>
+            <div class="requirements">
+              <p class="requirements-title">Minimum system requirements:</p>
+              <ul>
+                <li>Windows 10 64-bit</li>
+                <li>8GB RAM</li>
+                <li>DirectX 11 compatible GPU</li>
+                <li>10GB available storage</li>
+              </ul>
+            </div>
+            <a href="#" id="download-win" class="button pulse">Download for Win</a>
+          </article>
+
+          <article class="platform-card animate__animated animate__fadeInRight">
+            <div class="platform-icon">
+              <i class="fab fa-apple fa-3x"></i>
+            </div>
+            <h2>macOS</h2>
+            <div class="requirements">
+              <p class="requirements-title">Minimum system requirements:</p>
+              <ul>
+                <li>macOS 10.15 Catalina</li>
+                <li>8GB RAM</li>
+                <li>Metal compatible GPU</li>
+                <li>10GB available storage</li>
+              </ul>
+            </div>
+            <a href="#" id="download-mac" class="button pulse">Download for Mac</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Zero Gaming. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadMacButton = document.getElementById('download-mac');
+    const downloadWinButton = document.getElementById('download-win');
+
+    
+    
+    downloadMacButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const downloadLink = document.createElement('a');
+        downloadLink.href = 'sources/soon.txt';
+        downloadLink.download = 'coming_soon.txt'; 
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+     
+    });
+    downloadWinButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        const downloadLink = document.createElement('a');
+        downloadLink.href = 'sources/soon.txt';
+        downloadLink.download = 'coming_soon.txt'; 
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+     
+    });
+});
+
+</script>
+</html>

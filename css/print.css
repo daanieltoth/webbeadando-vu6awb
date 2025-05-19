@@ -1,0 +1,41 @@
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.3;
+    color: #000;
+    background: none;
+}
+
+header, footer, nav, .high-contrast, .button, video {
+    display: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    page-break-inside: avoid;
+}
+
+table {
+    page-break-inside: avoid;
+}
+
+h1, h2, h3 {
+    page-break-after: avoid;
+}
+
+@page {
+    margin: 2cm;
+}

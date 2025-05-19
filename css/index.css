@@ -1,0 +1,101 @@
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    margin-bottom: 4rem;
+}
+  
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.5;
+}
+  
+.hero-title {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+  
+.hero-subtitle {
+    font-size: 1.8rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+    opacity: 0.9;
+}
+  
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    position: relative;
+}
+  
+.video-section {
+    padding: 6rem 0;
+    background-color: white;
+}
+  
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+  
+.video-wrapper {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+  
+.video-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+  
+.accessibility-controls {
+    background-color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 4rem auto;
+    max-width: 600px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+  
+.button.pulse {
+    animation: pulse 2s infinite;
+}
+  
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
